@@ -1,0 +1,20 @@
+@media(min-width:768px) {
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #eec400 #d4d4d4;
+    }
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+    *::-webkit-scrollbar-track {
+        background: #d4d4d4;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #eec400;
+        border-radius: 10px;
+        border: 0px solid #ffffff;
+    }
+}

@@ -1,0 +1,7 @@
+/* For Transition */
+.search,.owl-nav div, .owl-dots div, .date_round, .course_content > a i, .single_service, .social_icons a, .testimonial_title, .romana_footer_area .footer_widget ul li a, .log_in::after, .teacher_title h3, .blog_date, .blog_bg > a, .romana_login_form input[type="submit"], .college_link > a, .single_college_bg::after, .single_student_forum, .forum_content, .social_icons, .blog_content > a, .left_class, .right_class, .right_class a, .roman_testimonial_area, .owl-nav, .single_faq h3, .gallery_img span, .romana_blog_text > a, .widget.widget_category a, .widget.widget_category a i, .single_service h3{
+    -webkit-transition-duration: .5s; 
+    -moz-transition-duration: .5s; 
+    -o-transition-duration: .5s; 
+    transition-duration: .5s;
+}

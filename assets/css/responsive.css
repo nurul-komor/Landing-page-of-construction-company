@@ -1,0 +1,76 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+@media (max-width:992px) {
+    /* navigation-bar */
+    .navigation-bar {
+        padding: 15px 0;
+        transition: 0.5s;
+        background-color: rgb(29, 29, 29);
+    }
+    .nav-right .menu-items {
+        position: fixed;
+        display: inline-block;
+        width: 75%;
+        max-width: 400px;
+        background-color: rgb(43, 43, 43);
+        left: -100%;
+        min-height: 100vh;
+        top: 0;
+        transition: 0.3s ease;
+        padding: 20px 0;
+        border-radius: 0 0 50% 0;
+        overflow-x: hidden;
+        z-index: 99;
+    }
+    .nav-right .menu-items.show {
+        left: 0;
+        transition: 0.3s ease;
+    }
+    .nav-right .menu-items a {
+        display: block;
+        text-align: center;
+        line-height: 2.5;
+        border: 1px solid rgb(90, 90, 90);
+        width: 101%;
+    }
+    .nav-right .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width:666px) {
+    .welcome .welcome-top h6::after,
+    .offer .offer-top h6::after,
+    .project .project-top h6::after,
+    .team-member .member-top h6::after,
+    .team-testimonial .testimonial-top h6::after,
+    .pricing-plan .plan-top h6::after,
+    .news .news-top h6::after {
+        display: none;
+    }
+    .welcome .welcome-top h6::before,
+    .offer .offer-top h6::before,
+    .project .project-top h6::before,
+    .team-member .member-top h6::before,
+    .team-testimonial .testimonial-top h6::before,
+    .pricing-plan .plan-top h6::before,
+    .pricing-plan .plan-top h6::before,
+    .news .news-top h6::before {
+        display: none;
+    }
+    .newsletter h6::after {
+        display: none;
+    }
+    /* message */
+    .message {
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media screen and (min-width:651px) {
+    .message .input-box {
+        padding: 50px 90px;
+    }
+}
