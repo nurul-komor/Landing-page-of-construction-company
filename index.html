@@ -56,7 +56,7 @@
             </div>
             <div class="nav-right justify-content-between d-flex">
                 <div class="menu-items">
-                    <a class="active" href="#">Home</a>
+                    <a href="#header">Home</a>
                     <a href="#about">About</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#services">services</a>
@@ -64,6 +64,9 @@
                     <a href="#price">price</a>
                     <a href="#news">news</a>
                     <a href="#contact">contact</a>
+                    <div class="cancel-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
                 </div>
                 <div class="nav-icons d-flex align-center ml-lg-4">
                     <i class="fa-solid fa-unlock"></i>
@@ -73,31 +76,30 @@
                         </label>
                         <form class="search-box d-flex">
                             <input type="search" id="form1" placeholder="Search here" />
-                            <button type="button" class="btn "><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button type="submit" value="submit" class="btn"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
-
                 </div>
                 <div class="menu-btn">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </div>
             </div>
-
         </div>
     </div>
-
-
     <!-- navigation-bar start-->
     <!-- header starts -->
-    <section class=" header owl-carousel">
+    <section class=" header owl-carousel" id="header">
         <div class="single-item ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
                         <h3 data-aos="fade-right" data-aos-duration="1300" data-aos-delay="300">WE build your</h3>
-                        <h1 data-aos="fade-right" data-aos-duration="1300" data-aos-delay="800">Dream <span>House</span> </h1>
+                        <h1 data-aos="fade-right" data-aos-duration="1300" data-aos-delay="800">Dream <span>House</span>
+                        </h1>
                         <h4 class="wow slideInLeft" data-wow-duration="2s">Fast & Safe construction</h4>
-                        <p class="wow slideInLeft" data-wow-duration="2s">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore iusto voluptatum facilis, quis accusantium sint deserunt minus cupiditate dicta pariatur enim sapiente vero temporibus illum debitis libero tempora sed!</p>
+                        <p class="wow slideInLeft" data-wow-duration="2s">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore iusto voluptatum facilis, quis accusantium sint deserunt minus cupiditate dicta pariatur enim sapiente vero temporibus illum debitis libero tempora sed!
+                        </p>
                         <a href="#" role="button">Get a quote<i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -133,14 +135,14 @@
     <!-- header end -->
     <!-- secondary-contact start -->
     <section class="secondary-contact">
-        <div class="container-lg  p-3">
+        <div class="container  p-3">
             <div class="row">
                 <div class="col-md-7 col-sm-6">
                     <h2>Need to consult with us?</h2>
                     <p style="text-align:justify; word-break:break-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique exercitationem tenetur.
                     </p>
                 </div>
-                <div class="col-md-5 col-sm-6 text-end">
+                <div class="col-md-5 col-sm-6 text-lg-end text-center">
                     <a class="btn" href="#contact" role="button">contact us<i class="fa-solid fa-right-long"></i></a>
                 </div>
             </div>
@@ -149,7 +151,7 @@
     <!-- secondary-contact end -->
     <!-- Welcome start  -->
     <div class="welcome container" id="about">
-        <div class="welcome-top" data-aos="fade-up" data-aos-duration="1000">
+        <div class="welcome-top px-3" data-aos="fade-up" data-aos-duration="700">
             <h6>Your are most</h6>
             <h2><span>Welcome to </span>Struc builder </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto error tempore deserunt dicta amet.
@@ -157,7 +159,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="row">
-            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="1350">
+            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="910">
                 <div class="welcome-section">
                     <i class="icofont-money"></i>
                     <h4>Fair <span>Price</span> </h4>
@@ -165,7 +167,7 @@
                     <a href="#" role="button">READ MORE<i class="icofont-long-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="1350">
+            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="910">
                 <div class="welcome-section">
                     <i class="icofont-rocket-alt-1"></i>
                     <h4>24/7 <span>Support</span> </h4>
@@ -173,7 +175,7 @@
                     <a href="#" role="button">READ MORE<i class="icofont-long-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="1350">
+            <div class="col-md-4 p-3" data-aos="fade-up" data-aos-duration="910">
                 <div class="welcome-section">
                     <i class="icofont-ui-timer"></i>
                     <h4>Fast <span>Delivery</span> </h4>
@@ -203,14 +205,14 @@
     <!-- offer start -->
     <section class="offer" id="services">
         <div class=" container">
-            <div class="offer-top">
+            <div class="offer-top" data-aos="fade-up" data-aos-duration="900">
                 <h6>We are skilled for</h6>
                 <h2><span>What</span> We are offering</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto error tempore deserunt dicta amet.
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="910">
                 <div class="col-sm-6 col-lg-4">
                     <div class="row offer-section">
                         <div class="col-3">
@@ -284,7 +286,7 @@
     <!-- project start -->
     <div class="project container-fluid text-center" id="gallery">
         <div class="container">
-            <div class="project-top">
+            <div class="project-top p-sm-3" data-aos="fade-up" data-aos-duration="900">
                 <h6>Our projects</h6>
                 <h2><span>View our </span>Project gallery</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto error tempore deserunt dicta amet.
@@ -292,7 +294,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
-        <ul class="gallery-btn">
+        <ul class="gallery-btn" data-aos="fade-up" data-aos-duration="900">
             <li class="active" data-filter="*">All</li>
             <li data-filter=".construction">Constructions</li>
             <li data-filter=".architecture">Architecture</li>
@@ -375,63 +377,26 @@
     <section class="counter-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3 p-3 p-lg-5">
-                    <div class="row">
-                        <div id="counters_1" class="col-6">
-                            <h2 class="counter" data-TargetNum="7240" data-Speed="7000">0</h2>
-                        </div>
-                        <div class="col-6">
-                            <h4> Project <br>Done</h4>
-                        </div>
+                <div class="col-sm-6 col-md-3" id="counters_1">
+                    <h2 class="counter" data-TargetNum="7240" data-Speed="7000">0</h2>
+                    <h4> Project <br>Done</h4>
+                </div>
+                <div class="col-sm-6 col-md-3" id="counters_2">
+                    <div>
+                        <h2 class="counter" data-TargetNum="2480" data-Speed="7000"></h2>
+                        <h4> Creative <br>material</h4>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 p-3 p-lg-5">
-                    <div class="row">
-                        <div id="counters_2" class="col-6">
-                            <h2 class="counter" data-TargetNum="2480" data-Speed="7000"></h2>
-                        </div>
-                        <div class="col-6">
-                            <h4>
-                                Creative <br>material
-                            </h4>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-md-3" id="counters_3">
+                    <h2 class="counter" data-TargetNum="270" data-Speed="7000"></h2>
+                    <h4> experienced <br>master</h4>
                 </div>
-                <div class="col-sm-6 col-md-3 p-3 p-lg-5">
-                    <div class="row">
-                        <div id="counters_3" class="col-6">
-                            <h2 class="counter" data-TargetNum="270" data-Speed="7000"></h2>
-                        </div>
-                        <div class="col-6">
-                            <h4> experienced <br>master</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 p-3 p-lg-5">
-                    <div class="row">
-                        <div id="counters_1" class="col-6">
-                            <h2 class="counter" data-TargetNum="2500" data-Speed="7000"></h2>
-                        </div>
-                        <div class="col-6">
-                            <h4> professional <br>awards</h4>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-md-3" id="counters_1">
+                    <h2 class="counter" data-TargetNum="2500" data-Speed="7000"></h2>
+                    <h4> professional <br>awards</h4>
                 </div>
             </div>
-
-
-
-
-
-            <!-- <div id="counters_1">
-                <h2 class="counter" data-TargetNum="98765" data-Speed="7000"></h2>
-            </div> -->
-            <!-- <div class="counter" data-TargetNum="7" data-Speed="7000" data-Direction="reverse" data-Easing="linear"></div> -->
-            <!-- <div class="counter" data-TargetNum="80333" data-Speed="9000">0</div> -->
-
-
-
-
+        </div>
         </div>
     </section>
     <!-- counter end -->
@@ -448,7 +413,7 @@
         <div class="members owl-carousel">
             <div class="member-section">
                 <img class="img-fluid" src="assets/images/employee-1.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>FName <span>LName</span></h3>
                     <h5>Profession</h5>
@@ -462,7 +427,7 @@
             </div>
             <div class="member-section">
                 <img style="width:85%;transform:scaleX(-1)" class="img-fluid" src="assets/images/employee-3.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>FName <span>LName</span></h3>
                     <h5>Profession</h5>
@@ -476,7 +441,7 @@
             </div>
             <div class="member-section">
                 <img class="img-fluid" src="assets/images/employee-2.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>Devid <span>Veone</span></h3>
                     <h5>Profession</h5>
@@ -491,7 +456,7 @@
             </div>
             <div class="member-section">
                 <img style="width:85%;transform:scaleX(-1)" class="img-fluid" src="assets/images/employee-3.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>FName <span>LName</span></h3>
                     <h5>Profession</h5>
@@ -505,7 +470,7 @@
             </div>
             <div class="member-section">
                 <img class="img-fluid" src="assets/images/employee-2.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>Devid <span>Veone</span></h3>
                     <h5>Profession</h5>
@@ -520,7 +485,7 @@
             </div>
             <div class="member-section">
                 <img style="width:85%;transform:scaleX(-1)" class="img-fluid" src="assets/images/employee-3.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>FName <span>LName</span></h3>
                     <h5>Profession</h5>
@@ -537,7 +502,7 @@
 
             <div class="member-section">
                 <img class="img-fluid" src="assets/images/employee-2.png" alt="">
-                <span></span>
+
                 <div class="member-bio">
                     <h3>FName <span>LName</span></h3>
                     <h5>Profession</h5>
@@ -554,13 +519,13 @@
     <!-- team container end  -->
     <!-- team testimonials start -->
     <div class="team-testimonial container-fluid px-3">
-        <div class="testimonial-top">
+        <div class="testimonial-top" data-aos="fade-up" data-aos-duration="900">
             <h6>Clients feedback</h6>
             <h2><span>Clients</span> testimonials</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet. </p>
         </div>
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="900">
             <div class="row mb-3">
                 <div class="col-6 image">
                     <img class="" src="assets/images/customer-1.png" alt="">
@@ -570,7 +535,8 @@
                     <h6>Creative Director</h4>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptatum suscipit similique rerum. Velit molestiae saepe illum eum pariatur! Culpa neque nostrum ea vitae, animi sapiente delectus in eveniet tenetur?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia voluptatum suscipit similique rerum. Velit molestiae saepe illum eum pariatur! Culpa neque nostrum ea vitae, animi sapiente delectus in eveniet tenetur?
+            </p>
             <div class="icon">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -611,12 +577,12 @@
     </div>
     <!-- client container end -->
     <!-- map start -->
-    <div class="map container-fluid px-5">
+    <div class="map container-fluid px-3 p-sm-3">
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-fluid" src="assets/images/map.png" alt="">
+            <div class="col-md-6 p-sm-3">
+                <img class="img-fluid" src="assets/images/map.png" alt="" data-aos="zoom-in" data-aos-duration="900">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 p-sm-3" data-aos="fade-up" data-aos-duration="900">
                 <h6>We are everywhere</h6>
                 <h2><span>we provide extended<br>warranties from</span> landing<br>industry supplies</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quod explicabo, similique tempore aliquam quaerat dicta tempora aperiam vel, maiores soluta suscipit ad repellendus expedita omnis autem? Ipsam, sapiente consectetur.
@@ -628,45 +594,45 @@
     <!-- map end -->
     <!-- newsletter start -->
     <div class="newsletter">
-        <div class="container p-3">
-            <div class="row">
-                <div class="col-md-6 p-sm-4">
+        <div class="container-lg px-3">
+            <div class="row" data-aos="fade-up" data-aos-duration="900">
+                <div class="col-md-6 px-sm-3">
                     <h6>want to get up to date</h6>
                     <h2><span>subscribe</span> newsletter</h2>
                 </div>
-                <div class="col-md-6">
-                    <form action="">
-                        <input type="email" placeholder="Enter Your Email" name="" id="">
+                <div class="col-md-6 px-sm-3">
+                    <form action="action.php">
+                        <input type="email" placeholder="Enter Your Email" name="" id="" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="bar container-fluid p-0">
+        <div class="bar">
             <img src="assets/images/bar.svg" alt="">
         </div>
     </div>
     <!-- newsletter end -->
     <!-- pricing plan start -->
     <div class="pricing-plan container" id="price">
-        <div class="plan-top p-3">
+        <div class="plan-top p-3" data-aos="fade-up" data-aos-duration="900">
             <h6>we offer our</h6>
             <h2><span>Best</span> Pricing plan</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto error tempore deserunt dicta amet.
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="910">
             <div class="col-sm-6 col-md-4 p-3">
                 <div class="plan-section">
                     <h4>Starter</h4>
                     <h6>Suitable for starter</h6>
                     <h3>$199.&#x2079;&#x2079;</h3>
-                    <p>Construction Consulting</p>
-                    <p>Concrete Construction</p>
-                    <p>Design Build</p>
-                    <p class="line">24/7 Customer Support</p>
-                    <p class="line">Home Loan Help</p>
+                    <p>Construction Consulting</p><br>
+                    <p>Concrete Construction</p><br>
+                    <p>Design Build</p><br>
+                    <p class="line">24/7 Customer Support</p><br>
+                    <p class="line">Home Loan Help</p><br>
                     <a href="#" role="button">Sign up</a>
                 </div>
             </div>
@@ -675,11 +641,11 @@
                     <h4>Starter</h4>
                     <h6>Suitable for starter</h6>
                     <h3>$199.&#x2079;&#x2079;</h3>
-                    <p>Construction Consulting</p>
-                    <p>Concrete Construction</p>
-                    <p>Design Build</p>
-                    <p>24/7 Customer Support</p>
-                    <p class="line">Home Loan Help</p>
+                    <p>Construction Consulting</p><br>
+                    <p>Concrete Construction</p><br>
+                    <p>Design Build</p><br>
+                    <p>24/7 Customer Support</p><br>
+                    <p class="line">Home Loan Help</p><br>
                     <a href="#" role="button">Sign up</a>
                 </div>
             </div>
@@ -688,11 +654,11 @@
                     <h4>Starter</h4>
                     <h6>Suitable for starter</h6>
                     <h3>$199.&#x2079;&#x2079;</h3>
-                    <p>Construction Consulting</p>
-                    <p>Concrete Construction</p>
-                    <p>Design Build</p>
-                    <p>24/7 Customer Support</p>
-                    <p>Home Loan Help</p>
+                    <p>Construction Consulting</p><br>
+                    <p>Concrete Construction</p><br>
+                    <p>Design Build</p><br>
+                    <p>24/7 Customer Support</p><br>
+                    <p>Home Loan Help</p><br>
                     <a href="#" role="button">Sign up</a>
                 </div>
             </div>
@@ -702,7 +668,7 @@
     <!-- news container start -->
     <section class="news" id="news">
         <div class="container">
-            <div class="news-top p-3">
+            <div class="news-top p-3" data-aos="fade-up" data-aos-duration="900">
                 <h6>news update</h6>
                 <h2><span>Read</span> recent news</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto error tempore deserunt dicta amet.
@@ -710,9 +676,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-lg-4 p-3">
+                <div class="col-sm-6 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="910">
                     <div class="news-section one">
-                        <div class="news-bg">
+                        <div class="news-bg" data-aos="zoom-in" data-aos-duration="900">
 
                         </div>
                         <div class="news-texts p-4">
@@ -723,9 +689,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 p-3">
+                <div class="col-sm-6 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="910">
                     <div class="news-section two">
-                        <div class="news-bg">
+                        <div class="news-bg" data-aos="zoom-in" data-aos-duration="900">
 
                         </div>
                         <div class="news-texts p-4">
@@ -736,9 +702,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 p-3">
+                <div class="col-sm-6 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="910">
                     <div class="news-section three">
-                        <div class="news-bg">
+                        <div class="news-bg" data-aos="zoom-in" data-aos-duration="900">
 
                         </div>
                         <div class="news-texts p-4">
@@ -757,10 +723,10 @@
     <section class="message">
         <div class="input-box container-lg" id="contact">
             <h2><span>Send</span> message</h2>
-            <form action="">
+            <form id="form" action="/assets/PHP/action.PHP">
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="text" name="" id="" placeholder="Enter Your Name...." required>
+                        <input type="text" name="" id="inputName" placeholder="Enter Your Name...." required>
                     </div>
                     <div class="col-md-6">
                         <input type="email" name="" id="" placeholder="Enter Your Name...." required>
@@ -809,7 +775,7 @@
                 </div>
             </div>
         </div>
-        <div class="bar container-fluid p-0">
+        <div class="bar">
             <img src="assets/images/bar.svg" alt="">
         </div>
     </section>
@@ -885,7 +851,9 @@
         <i class="fa-solid fa-arrow-turn-up"></i>
     </div>
     <!-- scroll top end-->
-
+    <!-- preloader start -->
+    <div id="preloader"></div>
+    <!-- preloader end -->
     <!-- copyright-section start  -->
     <!--==================================================================-->
     <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
@@ -894,6 +862,9 @@
         window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
     <!--=== All Plugin ===-->
+    <!--=== menu active ===-->
+
+    <!-- popper  -->
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 

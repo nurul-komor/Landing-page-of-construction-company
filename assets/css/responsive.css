@@ -2,8 +2,10 @@
 	All Responsive Code
 *******************************/
 
+
+/* navigation-bar */
+
 @media (max-width:992px) {
-    /* navigation-bar */
     .navigation-bar {
         padding: 15px 0;
         transition: 0.5s;
@@ -20,6 +22,7 @@
         top: 0;
         transition: 0.3s ease;
         padding: 20px 0;
+        padding-top: 80px;
         border-radius: 0 0 50% 0;
         overflow-x: hidden;
         z-index: 99;
@@ -34,20 +37,86 @@
         line-height: 2.5;
         border: 1px solid rgb(90, 90, 90);
         width: 101%;
+        font-size: 18px;
     }
     .nav-right .menu-btn {
         display: block;
     }
+    .nav-right .cancel-btn {
+        position: absolute;
+        top: 25px;
+        left: 45%;
+        display: block;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1264px) {
+    .header .owl-dots {
+        padding-left: 5.5%;
+    }
+}
+
+
+/* @media (min-width: 1064px) and (max-width:1173px) {
+    .header .owl-dots {
+        padding-left: 4%;
+    }
+} */
+
+@media (min-width: 767px) and (max-width:1259px) {
+    .header .owl-nav {
+        padding: 0 2%;
+    }
 }
 
 @media (max-width:666px) {
+    /* header */
+    .header .single-item {
+        padding: 150px 8px;
+    }
+    .header h1 {
+        font-size: 44px;
+    }
+    .header h4 {
+        font-size: 24px;
+    }
+    .header h3 {
+        font-size: 22px;
+    }
+    .header a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .header p {
+        text-align: justify;
+        word-break: break-all;
+    }
+    /* secondary contact */
+    .secondary-contact h2 {
+        font-size: 28px;
+    }
+    .secondary-contact a {
+        font-size: 16px;
+        padding: 0px 16px 8px 16px;
+        margin-top: 16px;
+    }
+    .welcome .welcome-top h2,
+    .offer .offer-top h2,
+    .project .project-top h2,
+    .team-member .member-top h2,
+    .team-testimonial .testimonial-top h2,
+    .map h2,
+    .pricing-plan .plan-top h2,
+    .newsletter h2,
+    .news .news-top h2 {
+        font-size: 28px;
+    }
     .welcome .welcome-top h6::after,
     .offer .offer-top h6::after,
     .project .project-top h6::after,
     .team-member .member-top h6::after,
     .team-testimonial .testimonial-top h6::after,
-    .pricing-plan .plan-top h6::after,
-    .news .news-top h6::after {
+    .pricing-plan .plan-top h6::after {
         display: none;
     }
     .welcome .welcome-top h6::before,
@@ -60,17 +129,52 @@
     .news .news-top h6::before {
         display: none;
     }
-    .newsletter h6::after {
-        display: none;
+    .testimonial-card {
+        padding: 50px;
     }
     /* message */
     .message {
         padding: 50px 0 50px 0;
+    }
+    /* map  */
+    .map a,
+    .project .bottom a,
+    .message .input-box button {
+        font-size: 16px;
+        padding: 12px 16px 8px 16px;
+        margin-top: 16px;
+        width: auto;
+    }
+    /* plan section */
+    .pricing-plan .plan-section {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width:651px) {
     .message .input-box {
         padding: 50px 90px;
+    }
+}
+
+@media (max-width:844px) {
+    .newsletter h6::after {
+        opacity: 0;
+    }
+}
+
+
+/* footer */
+
+@media (min-width:576px) and (max-width:767px) {
+    footer {
+        clip-path: polygon(0px 3%, 100% 1%, 100% 100%, 0% 100%);
+    }
+}
+
+@media (min-width:294px) and (max-width:575px) {
+    footer {
+        clip-path: polygon(0px 2%, 100% 1%, 100% 100%, 0% 100%);
     }
 }

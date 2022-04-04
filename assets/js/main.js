@@ -1,32 +1,36 @@
 // navbar 
 const body = document.querySelector("body")
 const navbar = document.querySelector(".navigation-bar")
-    // scroll top show 
+
 const topBtn = document.querySelector(".scroll-top")
 window.onscroll = () => {
     // navbar 
     this.scrollY > 50 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
+    this.scrollY > 900 ? navbar.classList.add("hide") : navbar.classList.remove("hide")
         // scroll top show 
-    this.scrollY > 1000 ? topBtn.classList.add("show") : topBtn.classList.remove("show")
+    this.scrollY > 900 ? topBtn.classList.add("show") : topBtn.classList.remove("show")
 }
 
-// window.onscroll = () => {
 
-// }
 $(document).ready(function($) {
+
     $("#search-btn").click(function() {
         $(".search-box").toggleClass("show")
     })
     $(".menu-btn").click(function() {
-        $(".menu-items").toggleClass("show");
-
-
+        $(".menu-items").addClass("show");
+        $(this).addClass("hide")
     })
+    $(".cancel-btn").click(function() {
+            $(".menu-items").removeClass("show");
+            $(".menu-btn").removeClass("hide")
+        })
+        // menu item
 
     // header 
 
     $('.header.owl-carousel').owlCarousel({
-            autoHeight: false,
+            autoHeight: true,
             autoWidth: false,
             loop: true,
             margin: 10,
@@ -145,7 +149,6 @@ $(document).ready(function($) {
         responsive: {
             0: {
                 items: 1,
-                dots: false,
             },
             783: {
                 items: 2,
@@ -181,7 +184,7 @@ $(document).ready(function($) {
     // for Aos
     AOS.init();
     // Animate the scroll to top
-    $(".scroll-top").on("click", function(event) {
+    $(".scroll-top svg").on("click", function(event) {
         event.preventDefault();
 
         $("html, body").animate({
@@ -192,6 +195,7 @@ $(document).ready(function($) {
     });
 
 });
+
 // for counter  counter
 let visibilityIds = ['#counters_1', '#counters_2', '#counters_3', '#counters_4'];
 let defaultSpeed = 3000;
@@ -208,3 +212,14 @@ if ($(".wow").length) {
     });
     wow.init();
 }
+
+// Preloader JS
+function preloader() {
+    if ($("#preloader").length) {
+        $(window).on("load", function() {
+            $("#preloader").fadeOut();
+            $("#preloader").delay(0).fadeOut("slow");
+        });
+    }
+}
+preloader();
