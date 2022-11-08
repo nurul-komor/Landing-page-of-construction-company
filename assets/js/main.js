@@ -216,10 +216,12 @@ if ($(".wow").length) {
 // Preloader JS
 function preloader() {
     if ($(".header").length) {
-        $('.header').on("load", function () {
+        $(window).on("load", function () {
             $("#preloader").fadeOut();
             $("#preloader").delay(0).fadeOut("slow");
+            console.log("ok")
         });
     }
 }
-// preloader();
+
+preloader()
