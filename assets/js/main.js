@@ -214,14 +214,12 @@ if ($(".wow").length) {
 }
 
 // Preloader JS
-function preloader() {
-    if ($(".header").length) {
-        $(window).on("load", function () {
-            $("#preloader").fadeOut();
-            $("#preloader").delay(0).fadeOut("slow");
-            console.log("ok")
-        });
-    }
-}
-
-preloader()
+// function preloader() {
+// if ($("#preloader").length) {
+$(window).on("load", function () {
+    $("#preloader").fadeOut();
+    $("#preloader").delay(0).fadeOut("slow");
+});
+// }
+// }
+// preloader();
