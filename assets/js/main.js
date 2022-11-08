@@ -215,7 +215,7 @@ if ($(".wow").length) {
 
 // Preloader JS
 function preloader() {
-    if ($(".owl-carousel").length) {
+    if ($(".header").length) {
         $(window).on("load", function () {
             $("#preloader").fadeOut();
             $("#preloader").delay(0).fadeOut("slow");
