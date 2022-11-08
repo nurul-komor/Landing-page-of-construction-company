@@ -222,4 +222,4 @@ function preloader() {
         });
     }
 }
-preloader();
+// preloader();
