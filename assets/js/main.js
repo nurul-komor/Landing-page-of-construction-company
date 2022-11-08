@@ -216,7 +216,7 @@ if ($(".wow").length) {
 // Preloader JS
 function preloader() {
     if ($(".header").length) {
-        $(window).on("load", function () {
+        $('.header').on("load", function () {
             $("#preloader").fadeOut();
             $("#preloader").delay(0).fadeOut("slow");
         });
