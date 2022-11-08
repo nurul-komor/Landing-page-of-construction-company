@@ -88,13 +88,16 @@ Primary use:
     }
     
     body {
+       
         overflow-x: hidden;
     }
     
     ul li {
         list-style: none;
     }
-    
+    .container{
+         content-visibility: auto;
+    }
     h1,
     h2,
     h3,
