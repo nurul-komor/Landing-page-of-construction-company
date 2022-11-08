@@ -7,67 +7,67 @@ window.onscroll = () => {
     // navbar 
     this.scrollY > 50 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
     this.scrollY > 900 ? navbar.classList.add("hide") : navbar.classList.remove("hide")
-        // scroll top show 
+    // scroll top show 
     this.scrollY > 900 ? topBtn.classList.add("show") : topBtn.classList.remove("show")
 }
 
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
 
-    $("#search-btn").click(function() {
+    $("#search-btn").click(function () {
         $(".search-box").toggleClass("show")
     })
-    $(".menu-btn").click(function() {
+    $(".menu-btn").click(function () {
         $(".menu-items").addClass("show");
         $(this).addClass("hide")
     })
-    $(".cancel-btn").click(function() {
-            $(".menu-items").removeClass("show");
-            $(".menu-btn").removeClass("hide")
-        })
-        // menu item
+    $(".cancel-btn").click(function () {
+        $(".menu-items").removeClass("show");
+        $(".menu-btn").removeClass("hide")
+    })
+    // menu item
 
     // header 
 
     $('.header.owl-carousel').owlCarousel({
-            autoHeight: true,
-            autoWidth: false,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: false,
-            margin: 10,
-            // nav: true,
-            // dot: true,
-            items: 1,
-            navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
-            responsiveClass: true,
-            responsive: {
+        autoHeight: true,
+        autoWidth: false,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        margin: 10,
+        // nav: true,
+        // dot: true,
+        items: 1,
+        navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+        responsiveClass: true,
+        responsive: {
 
-                0: {
-                    autoplay: false,
-                    dots: false,
-                    nav: false
+            0: {
+                autoplay: false,
+                dots: false,
+                nav: false
 
-                },
-                650: {
-                    nav: true,
-                    dots: false,
-                    autoplay: false,
+            },
+            650: {
+                nav: true,
+                dots: false,
+                autoplay: false,
 
-                },
+            },
 
-                1000: {
-                    nav: true,
-                    dot: true,
-                }
+            1000: {
+                nav: true,
+                dot: true,
             }
-        })
-        // project section
+        }
+    })
+    // project section
 
     /*Iso Tope */
-    $(".gallery-btn li").on("click", function() {
+    $(".gallery-btn li").on("click", function () {
         var selector = $(this).attr("data-filter");
         //alert(selector);
         $(".project-gallery").isotope({
@@ -79,7 +79,7 @@ $(document).ready(function($) {
     // iso tope active classes
     var projectTitle = $(".gallery-btn li");
     if (projectTitle.length) {
-        $(".gallery-btn li").on("click", function(event) {
+        $(".gallery-btn li").on("click", function (event) {
             $(this).siblings(".active").removeClass("active");
             $(this).addClass("active");
             event.preventDefault();
@@ -184,12 +184,12 @@ $(document).ready(function($) {
     // for Aos
     AOS.init();
     // Animate the scroll to top
-    $(".scroll-top svg").on("click", function(event) {
+    $(".scroll-top svg").on("click", function (event) {
         event.preventDefault();
 
         $("html, body").animate({
-                scrollTop: 0,
-            },
+            scrollTop: 0,
+        },
             200
         );
     });
@@ -215,8 +215,8 @@ if ($(".wow").length) {
 
 // Preloader JS
 function preloader() {
-    if ($("#preloader").length) {
-        $(window).on("load", function() {
+    if ($(".owl-carousel").length) {
+        $(window).on("load", function () {
             $("#preloader").fadeOut();
             $("#preloader").delay(0).fadeOut("slow");
         });
